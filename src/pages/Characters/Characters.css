@@ -31,26 +31,42 @@
 
 }
 
-.Filter-Icon{border: none;}
+.Filter-Icon {
+    border: none;
+}
 
 
-.Filter-Icon:active{border:1px solid #6DCCAB; background-color:#344D67;}
-.formulario2{display: flex;
-align-items: center;
+.Filter-Icon:active {
+    border: 1px solid #6DCCAB;
+    background-color: #344D67;
+}
 
-justify-content: center;margin}
+.formulario2 {
+    display: flex;
+    align-items: center;
+
+    justify-content: center;
+    margin
+}
+
 @media(min-width:800px) {
 
-    .Filtro-Respon {
-        display: none !important;
-        background-color: #344D67;
-
-    }
 
     .Titulo-2 {
         display: block;
     }
 
+    .Tarjetas-Completas {
+        margin-top: 50px;
+    }
+
+    .Filter-Icon {
+        background-color: #344D67;
+    }
+
+    .Tarjetas-Completas {
+        margin-top: 50px;
+    }
 
 }
 
@@ -67,5 +83,9 @@ justify-content: center;margin}
     .Filter-Icon {
         background-color: #344D67;
     }
-    
+
+    .Filter-Icon:hover {
+        background-color: #344D67;
+    }
+
 }

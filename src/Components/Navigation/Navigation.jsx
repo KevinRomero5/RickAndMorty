@@ -15,9 +15,9 @@ export default function Navigation({ pageName }) {
 
                 </div>
                 <div className='Lista'>
-                    <ul className='lista collapse' id="hamburguesa">
-                        <li className='collapse'><Link to="/Characters" className={pageName === "Characters" ? "activo p-2" : 'p-2'}>Characters</Link></li>
-                        <li className='collapse'><Link to="/Contact" className={pageName === "Contact" ? "activo p-2" : 'p-2'}>Contact</Link></li>
+                    <ul className='lista ' id="hamburguesa">
+                        <li className='personajes'><Link to="/Characters" className={pageName === "Characters" ? "activo p-2" : 'p-2'}>Characters</Link></li>
+                        <li className='contacto'><Link to="/Contact" className={pageName === "Contact" ? "activo p-2" : 'p-2'}>Contact</Link></li>
                     </ul>
                 </div>
 
