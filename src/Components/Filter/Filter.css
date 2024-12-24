@@ -1,0 +1,27 @@
+.filtro {display:block;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #334c66;
+    color: #6ECCAF;
+    border-radius: 5px;
+    font-weight: 500;
+    margin-bottom: 50px;
+    padding: 10px 45px;
+    margin-left: 36px;
+ 
+}
+
+.filtro-2 {
+    padding-left: 10px;
+}
+
+.checkbox {
+    background-color:#B1F0DC;
+}
+
+
+@media(max-width:720px){
+    .filtro {
+        display:none
+    }
+}

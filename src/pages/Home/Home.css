@@ -1,0 +1,102 @@
+*{
+box-sizing: border-box;
+}
+
+.interior-contenedor {
+  display: flex;
+  padding: 170px 200px 0px 200px;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.fondo-blanco {
+  display: flex;
+  display: inline-block;
+  padding-top: 40px;
+  text-align: center;
+  background-color: #ffffffe6;
+  width: 540px;
+  height: 540px;
+  color: #344D67;
+
+}
+
+
+.Tittle-Proyect {
+  font-size: 37px;
+  display: inline-block;
+  align-items: center;
+  color: #344D67;
+  padding-top: 15px;
+  height: 40px;
+}
+
+.Helcome {
+  font-size: 29px;
+  padding: 0 0 10px 15px;
+  color: #344D67;
+  height: 40px;
+  margin-top: 25px;
+}
+
+.p-home {
+  font-size: 14px;
+  font-weight: 500;
+  color: #344D67;
+  height: 40px;
+  margin: 7px 5px 5px 5px;
+}
+
+
+.Lets-go {
+  font-size: 30px;
+  padding: 30px 0px 50px 0px;
+  color: #344D67;
+  height: 50px;
+}
+
+.flex-column{
+  flex-direction: column !important;
+}
+
+
+@media(max-width:720px) {
+
+  .interior-contenedor {
+    display: flex;
+    padding: 170px 100px 0px 100px;
+    align-items: center;
+    justify-content: center;
+  
+  }
+
+.interior-contenedor{
+  box-sizing:border-box;
+}
+
+.fondo-blanco{box-sizing: border-box;
+  width: 100%;
+}
+
+  .Tittle-Proyect {
+    font-size: 17px;
+    margin-bottom: 0;
+  
+  }
+
+
+.Helcome{font-size: 20px;
+  color: #5adfb5;
+padding-top: 5px;
+margin: 0 0 30px 0;}
+
+  .Lets-go {
+    color:#5adfb5; padding-top: 80px;
+  }
+  
+.Buttons-Home {display:inline-block;
+  padding:0px 30px 30px 30px;
+  box-shadow: none;
+}
+}

@@ -1,0 +1,54 @@
+.Titulo-2 {
+    opacity: 0.9;
+    padding: 100px 0 0 20px;
+    font-size: 30px;
+    color: #344D67;
+
+}
+
+.Aviso {width: 95%;
+    height: 60px;
+    background-color:#6ECCAF;
+    color: #344D67;
+    border-radius: 5px;
+    font-weight: 500;
+    margin-left: 40px;
+    font-size: 18px;
+}
+
+
+.Filtro-Respon {display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #6DCCAB;
+    background-color: #334c66;
+    width: 80%;
+    height:60px ;
+  border-radius: 7px;
+  margin-left: 50px;
+
+}
+
+
+@media(min-width:720px) {
+  
+    .Filtro-Respon {
+        display: none !important;
+        background-color: #344D67;
+
+    }
+
+    .Titulo-2 {
+        display: block;
+    }
+
+    .form {
+        display: flex;
+    }
+
+}
+
+
+@media(max-width:720px){  .Titulo-2{display: none;}
+.Tarjetas-Completas{margin-top: 50px;}
+}

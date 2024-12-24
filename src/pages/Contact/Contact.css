@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+}
+
+
+header {
+  position: sticky;
+}
+
+
+.contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+.fondo-gris {
+  text-align: center;
+  background-color:rgba(95, 123, 148, 0.9);
+  width:700px;
+  height: 650px;
+  padding-top: 40px;
+
+}
+
+.Titulo-Contact {padding-right: 35px;
+color:#223143;
+display: flex;
+justify-content: center;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+
+.Leave {color: #223143;
+  font-weight: 500;
+  font-size: 25px;
+  justify-content: center;
+}
+
+.Formulario-Contact {
+  display: inline-block;
+  justify-content: center;
+}
+
+.Name {
+color: #223143;
+font-weight: 500;
+font-size: 14px;
+padding-right: 300px;
+}
+
+.Name input {
+  width: 300px;
+  background-color: white;
+  height: 40px;
+  box-shadow: none;
+  border:0;
+  border-radius: 5px;
+}
+
+.Email {
+  width: 200px;
+  height: 23px;
+  padding-right: 320px;
+}
+
+.Email label {padding-right: 130px;
+  color: #223143;
+  font-weight: 500;
+  font-size: 14px;
+  border: 0;
+}
+
+.Email input {
+  width: 345px;
+  height: 40px;
+  background-color: white;
+  margin-left: 10px;
+  box-shadow: none;
+  border: 0;
+  border-radius: 5px;
+}
+
+
+.Messege{
+  
+}
+.Messege label {
+  display: block;
+  text-align: start;
+    font-size: 14px;
+    color: #223143;
+    font-weight: 500;
+    padding-top: 5px;
+}
+
+.Messege textarea {
+  width: 100%;
+  height: 280px;
+  border-radius: 5px;
+ /*  margin-left: 25px; */
+}
+
+input {display: flex;
+  justify-content: left;
+  font-size: 15px;
+  background-color:#344d67;
+  height: 35px;
+  width: 60px;
+color: white;
+border-radius: 5px;
+font-weight: 500;
+border: none;
+/* margin-left:200px; */
+
+}
+.send :hover {
+  background-color: #6ECCAa;
+  transition: 0.5;
+  color: #344d67;
+  font-weight: 400;
+}
+
+
+
+
+@media(max-width:1000px) {
+  .Formulario-Contact {
+  display: block;
+
+}
+
+}

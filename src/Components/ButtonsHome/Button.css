@@ -1,0 +1,18 @@
+.buttonHome{
+    background-color:#344D67;
+    color: #6ECCAF;
+    font-weight: 500;
+    font-size: 15px;
+    height: 50px;
+    width: 120px;
+    margin: 7px;
+    padding-top: 12px;
+}
+
+.buttonHome:hover {
+    background-color: #6DCCAE;
+    color: #344D67;
+    transition: 0.3s;
+    width: 110px;
+}
+

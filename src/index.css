@@ -1,0 +1,16 @@
+@font-face {
+  font-family: "Raleway";
+  src: url("../font/Raleway-VariableFont_wght.ttf");
+}
+*{margin:0;
+padding: 0;}
+
+body {   
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+  background-image: url(pages/images/rickymorty.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh; 
+  background-attachment: fixed;
+}
+
