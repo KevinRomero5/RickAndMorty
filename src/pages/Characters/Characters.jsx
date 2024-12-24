@@ -11,7 +11,7 @@ export default function Characters() {
     let [data, setData] = useState([])
     let [dataCompleta, setDataCompleta] = useState([])
     let [filtrosAplicados, setFiltrosAplicados] = useState([])
-    let [show, setShow] = useState(true)
+    let [show, setShow] = useState(false)
 
     let filterName = ["Character Alive", "Character Dead", "Female", "Male", "Origin Unknown"]
 
@@ -90,27 +90,27 @@ export default function Characters() {
             <Navigation pageNAme={'Characters'} />
 
             <h2 className='Titulo-2'>Filters</h2>
-            <div className='Filtro-Respon d-flex gap-3 my-3' onClick={() => { setShow(!show) }}>
-                <h2 className='Filters'>Filters</h2>
-       
-            <svg className='Filter-Icon' width="40" height="30" viewBox="0 0 40 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-<line y1="3.5" x2="40" y2="3.5" stroke="#6ECCAF"/>
-<line y1="14.5" x2="40" y2="14.5" stroke="#6ECCAF"/>
-<line y1="26.5" x2="40" y2="26.5" stroke="#6ECCAF"/>
-<circle cx="33.5" cy="3.5" r="3" fill="#344D67" stroke="#6ECCAF"/>
-<circle cx="20.5" cy="26.5" r="3" fill="#344D67" stroke="#6ECCAF"/>
-<circle cx="7.5" cy="14.5" r="3" fill="#344D67" stroke="#6ECCAF"/>
-</svg>
+            <div className='Filtro-Respon d-flex gap-3 my-3' >
+                <h2 className='Filters ' >Filters</h2>
+                 <svg className='Filter-Icon btn btn-primary' data-bs-toggle="collapse" href="#formulario2" role="button" aria-expanded="false" aria-controls="formulario2"  width="60" height="50" viewBox="0 0 40 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line y1="3.5" x2="40" y2="3.5" stroke="#6ECCAF" />
+                    <line y1="14.5" x2="40" y2="14.5" stroke="#6ECCAF" />
+                    <line y1="26.5" x2="40" y2="26.5" stroke="#6ECCAF" />
+                    <circle cx="33.5" cy="3.5" r="3" fill="#344D67" stroke="#6ECCAF" />
+                    <circle cx="20.5" cy="26.5" r="3" fill="#344D67" stroke="#6ECCAF" />
+                    <circle cx="7.5" cy="14.5" r="3" fill="#344D67" stroke="#6ECCAF" />
+                </svg>
 
             </div>
-            <div className='formulario'>
-                <form className={show ? 'form row gap-2' : 'row gap-2'}>
+            <div className='formulario2 collapse multi-collapse' id='formulario2'>
+         <form className={'formulario2 row gap-2'}>
                     {
                         filterName.map((filter) => {
                             return <Filter key={filter} title={filter} filtar={filtrar} />
                         })
                     }
                 </form>
+                
             </div>
 
             <section className='Tarjetas-Completas d-flex gap-2 flex-wrap'>
@@ -122,9 +122,9 @@ export default function Characters() {
                         })
                         :
                         <div className='Aviso' >
-                        <p className='alert'>
-                            <i className="bi bi-exclamation-triangle-fill pe-2"></i>Sorry! There are no characters width all those properties.</p>
-                            </div>
+                            <p className='alert'>
+                                <i className="bi bi-exclamation-triangle-fill pe-2"></i>Sorry! There are no characters width all those properties.</p>
+                        </div>
                 }
 
             </section>

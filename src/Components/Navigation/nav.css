@@ -39,12 +39,12 @@ nav {
     align-items: center;
     justify-content: space-between;
     text-align: center;
-list-style-type: none;
+    list-style-type: none;
 }
 
 
 
-.lista li a{
+.lista li a {
     color: #5adfb5;
     text-decoration: none;
     display: flex;
@@ -75,28 +75,36 @@ list-style-type: none;
     height: auto;
 }
 
-.Menu-Burguer { display: none !important;}
-
-
-@media(max-width:975px) {
-    nav { height: 300px;}
-  
-    .Menu-Burguer {display: inline-block !important;
-    }
-    .Menu-Burguer svg {margin: 80px 0px 0px 100px;}
-.Lista {display: block;}
-.lista {display: block;}
-.contacto{margin-top: 10px;}
-
+.Menu-Burguer {
+    display: none !important;
 }
+
+
+
 
 
 @media(max-width:800px) {
 
-    .Menu-Burguer {display: flex !important;
-}
-    .Menu-Burguer svg {margin-bottom: 100px;}
-.Lista {display: none;}
-nav{height: 150px;}
+    .Menu-Burguer {
+        display: flex !important;
+    }
 
+    .Menu-Burguer svg {border: none;
+        background-color: #344d67;
+        margin-bottom: 10px;
+    }
+.Menu-Burguer svg:hover{background-color:#344d67;}
+.Menu-Burguer svg:active{border: 3px solid black;border-radius: 4px;}
+    .Lista {
+        display: none;
+    }
+
+    nav {
+        height: 150px;
+    }
+
+}
+
+.Rick-Morty {
+    width: 170px;
 }
